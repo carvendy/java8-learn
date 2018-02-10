@@ -13,14 +13,14 @@ import lombok.ToString;
 public class Apple {
 
     private String color;
-    private int weigth;
+    private Integer weight;
 
     public static boolean isGreen(Apple apple){
         return "green".equals(apple.getColor());
     }
 
     public static boolean isHeavy(Apple apple){
-        return apple.getWeigth() > 150;
+        return apple.getWeight() > 150;
     }
 
 }

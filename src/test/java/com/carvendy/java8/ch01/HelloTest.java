@@ -57,7 +57,7 @@ public class HelloTest {
         /**
          *  表面一等值，隐含二等值
          */
-        List<Apple> collect = list.stream().filter((Apple a) -> a.getWeigth() > 122).collect(toList());
+        List<Apple> collect = list.stream().filter((Apple a) -> a.getWeight() > 122).collect(toList());
         System.out.println(collect);
 
         /**

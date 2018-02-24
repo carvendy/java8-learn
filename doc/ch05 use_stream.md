@@ -9,12 +9,14 @@
 
 中间操作
 - filter
-- distinct
-- limit
-- skip
+- distinct(有状态无界)
+- limit(有状态有界)
+- skip(有状态有界)
+- sorted(有状态无界)
 
 终端操作
 - toList
-- 
+- reduce(有状态有界)
+
 
 

@@ -182,12 +182,14 @@ public class StreamTest {
 
 
     @Test
-    public void test(){
-      /*  Stream.iterate(new int[]{0, 1},new int[]{0, 1})
+    public void streamGen(){
+       /*Stream.iterate(new int[]{0, 1},new int[]{0, 1})
                 .forEach(t -> System.out.println("(" + t[0] + "," + t[1] +")"));*/
-
-        
+       Stream.generate(Math::random)
+               .limit(5)
+               .forEach(System.out::println);
     }
+
 
 
 }
